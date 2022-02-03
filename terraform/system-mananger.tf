@@ -8,7 +8,7 @@ resource "aws_ssm_parameter" "secret" {
 }
 
 
-resource "aws_ssm_parameter" "secret" {
+resource "aws_ssm_parameter" "nvio" {
   name        = "/${data.aws_caller_identity.current.account_id}/world"
   description = "The parameter description"
   type        = "String"
